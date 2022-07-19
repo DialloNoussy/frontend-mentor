@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+}
+:root{
+    --Soft-red: hsl(10, 79%, 65%);
+    --Cyan: hsl(186, 34%, 60%);
+    --Dark-brown: hsl(25, 47%, 15%);
+    --Medium-brown: hsl(28, 10%, 53%);
+    --Cream: hsl(27, 66%, 92%);
+    --Very-pale-orange: hsl(33, 100%, 98%);
+
+    /* Fonts */
+    --Size-one: 18px;
+    --Size-two: 1.7rem;
+    --Weight-one: 400;
+    --Weigth-two: 700;
+}
+body{
+    background-color: var(--Cream);
+}
+.container{
+    width: 90%;
+    max-width: 500px;
+    margin: 16vh auto 0 auto;
+}
+.balance{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: .6em;
+    background-color: var(--Soft-red);
+}
+.my-balance{
+    color: var(--Very-pale-orange);
+}
+.my-balance__title{
+    font-size: var(--Size-one);
+    font-weight: var(--Weight-one);
+}
+.my-balance__amount{
+    font-size: var(--Size-two);
+    font-weight: var(--Weigth-two);
+    margin-top: .3em;
+}
+.balance-main{
+    padding: 1.6em 1.4em;
+    background-color: var(--Very-pale-orange);
+    border-radius: .6em;
+}
+.balance--week{
+    color: var(--Dark-brown);
+}
+.balance--week__title{
+    font-size: 1.6rem;
+    font-weight: var(--Weigth-two);
+    margin-bottom: 1.8em;
+}
+.balance--week__graphic{
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.balance--week__graphic::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%; 
+    height: .2em;
+    background-color: var(--Cream);
+}
+.day{
+    width: clamp(26px, 12%, 46px);
+    color: var(--Medium-brown);
+    position: relative;
+}
+.day:hover .day__bar{
+    opacity: .7;
+    cursor: pointer;
+}
+.day__bar{
+    background-color: var(--Soft-red);
+    border-radius: .4em;
+    position: relative;
+}
+.day__bar--amount{
+    position: absolute;
+    text-align: center;
+    left: -1em;
+    right: -1em;
+    top: 0;
+    transform: translateY(-110%);
+    background-color: var(--Dark-brown);
+    padding: .4em .6em;
+    color: var(--Very-pale-orange);
+    border-radius: .6em;
+    z-index: 2;
+}
+.dangerous-day{
+    background-color: var(--Cyan);
+}
+.day__name{
+    text-align: center;
+    font-weight: var(--Weight-one);
+    padding: .8em 0 1.4em 0;
+}
+.balance--total{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    font-size: var(--Size-one);
+    color: var(--Medium-brown);
+    margin-top: 1em;
+}
+.current-month__amount,
+.last-month__compare{
+    font-weight: var(--Weigth-two);
+    color: var(--Dark-brown);
+}
+.current-month__amount{
+    font-size: clamp(2.20rem, 4vw, 3rem);
+    margin-top: .3em;
+}
+.last-month__compare,
+.last-month__text{
+    text-align: right;
+}
+.last-month__compare{
+    font-size: var(--Size-one);
+    margin-bottom: .3em;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>Frontend Mentor | Expenses chart component</title>
+
+</head>
+<body>
+  <div class="container">
+    <header class="balance" role="banner">
+      <div class="my-balance">
+        <p class="my-balance__title">My balance</p>
+        <p class="my-balance__amount">$921.48</p>
+      </div>
+      <div class="balance__logo">
+        <img src="images/logo.svg" alt="logo">
+      </div>
+    </header>
+    <main class="balance-main" role="main">
+      <section class="balance--week">
+        <p class="balance--week__title">There's no data yet</p>
+        <ul class="balance--week__graphic">
+
+        </ul>
+      </section>
+      <section class="balance--total">
+        <div class="current-month">
+          <p class="current-month__title">Total this month</p>
+          <p class="current-month__amount">$478.33</p>
+        </div>
+        <div class="last-month">
+          <p class="last-month__compare">+2.4%</p>
+          <p class="last-month__text">from last month</p>
+        </div>
+      </section>
+    </main>
+    <footer class="challenge" role="contentinfo">
+      <p class="challenge__text">Challenge by</p>
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="challenge__link">Frontend Mentor</a>. 
+      <p class="challenge__owner">Coded by</p>
+      <a href="#" class="owner--link">Jorge Barrera</a>.
+    </footer>
+  </div>
+  <script src="./code.js"></script>
+</body>
+</html>
